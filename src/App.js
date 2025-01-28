@@ -14,13 +14,13 @@ const App = () => {
         dispatch(asyncData());
     }, [dispatch]);
 
-    // Фильтруем персонажей по имени
     const filteredCharacters = characters?.filter(character =>
         character.name.toLowerCase().includes(filter.toLowerCase())
     );
 
     return (
         <div>
+            <h1>RUFINA</h1>
             {/* Форма фильтрации */}
             <input
                 type="text"
